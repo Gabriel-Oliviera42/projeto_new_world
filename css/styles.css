@@ -60,8 +60,6 @@ header {
     display: flex;
     position: sticky;       /*segue o usuário deixando o fundo embaçado*/
     top: 0;
-    backdrop-filter: blur(4px);
-    z-index: 20;
 }
 
 header .container {
@@ -93,12 +91,13 @@ header button {
 /*-------------Hero-Section-------------*/
 
 .s-hero {
-    position: relative;
     width: 100%;
     background-color: rgb(43, 0, 255);
     height: 80rem;
-    padding-top: 11.2rem;
-    padding-bottom: 14.3rem;
+}
+
+.s-hero .container {
+    border-top: 1px solid black;
 }
 
 /*-------------Reasons-Section-------------*/
@@ -117,6 +116,10 @@ header button {
     height: 100rem;
 }
 
+.s-destinations .container {
+    border-top: 1px solid black;
+}
+
 /*-------------Packages-Section-------------*/
 
 .s-packages {
@@ -125,12 +128,20 @@ header button {
     height: 100rem;
 }
 
+.s-packages .container {
+    border-top: 1px solid black;
+}
+
 /*-------------Testimonials-Section-------------*/
 
 .s-testimonials {
     width: 100%;
     background-color: rgb(0, 204, 255);
     height: 70rem;
+}
+
+.s-testimonials .container {
+    border-top: 1px solid black;
 }
 
 
