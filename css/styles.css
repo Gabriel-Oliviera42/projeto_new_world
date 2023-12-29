@@ -80,14 +80,6 @@ header nav a {
     transition: color .3s ease;
 }
 
-header button {
-    padding: 0.95rem 2.4rem;;
-    font-size: 1.4rem;
-    font-weight: 500;
-    line-height: 150%;
-    border-radius: 32px;
-}
-
 /*-------------Hero-Section-------------*/
 
 .s-hero {
