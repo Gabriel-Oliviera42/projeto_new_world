@@ -58,8 +58,9 @@ header {
     width: 100%;
     height: 7.2rem;
     display: flex;
-    position: sticky;       /*segue o usuário deixando o fundo embaçado*/
+    position: sticky;       /* segue o usuário deixando o fundo embaçado */
     top: 0;
+    z-index: 20;  /* importane caso for usar position: sticky; */
 }
 
 header .container {
@@ -92,12 +93,60 @@ header nav a {
     border-top: 1px solid black;
 }
 
+.s-hero h1 {
+    font-size: 4.8rem;
+    font-weight: 600;
+    text-align: center;
+    margin-bottom: 8px;
+    padding-top: 160px;
+}
+
+.s-hero p {
+    text-align: center;
+    font-size: 1.8rem;
+    line-height: 150%;
+    margin-bottom: 7.2rem;
+}
+
 /*-------------Reasons-Section-------------*/
 
 .s-reasons {
     width: 100%;
     background-color: rgb(0, 128, 9);
     height: 70rem;
+}
+
+.s-reasons .container { /* temporaria*/
+    position: relative;
+}
+
+.s-reasons h2 {
+    font-size: 4.8rem;
+    font-weight: 600;
+    text-align: center;
+    margin-bottom: 8px;
+    padding-top: 80px;
+}
+
+.s-reasons p {
+    text-align: center;
+    font-size: 1.8rem;
+    line-height: 150%;
+    margin-bottom: 7.2rem;
+}
+
+/*------------- Parte com os slides -------------*/
+
+.s-reasons .swiper-wrapper { /* temporaria*/
+    display: flex;   
+    gap: 10px;
+}
+
+.s-reasons .card {
+    background-color: #2484BF;
+    display: block;
+    width: 100%;
+    max-width: 22rem;
 }
 
 /*-------------Destinations-Section-------------*/
@@ -112,6 +161,21 @@ header nav a {
     border-top: 1px solid black;
 }
 
+.s-destinations h2 {
+    font-size: 4.8rem;
+    font-weight: 600;
+    text-align: center;
+    margin-bottom: 8px;
+    padding-top: 80px;
+}
+
+.s-destinations p {
+    text-align: center;
+    font-size: 1.8rem;
+    line-height: 150%;
+    margin-bottom: 7.2rem;
+}
+
 /*-------------Packages-Section-------------*/
 
 .s-packages {
@@ -124,23 +188,27 @@ header nav a {
     border-top: 1px solid black;
 }
 
+.s-packages h2 {
+    font-size: 4.8rem;
+    font-weight: 600;
+    text-align: center;
+    margin-bottom: 8px;
+    padding-top: 80px;
+}
+
+.s-packages p {
+    text-align: center;
+    font-size: 1.8rem;
+    line-height: 150%;
+    margin-bottom: 7.2rem;
+}
+
 /*-------------Testimonials-Section-------------*/
 
 .s-testimonials {
     width: 100%;
     background-color: rgb(0, 204, 255);
-    height: 70rem;
-}
-
-.s-testimonials .container {
-    border-top: 1px solid black;
-}
-
-
-/*-------------Booking-Section-------------*/
-
-.s-booking {
-    width: 100%;
-    background-color: rgb(255, 0, 187);
     height: 20rem;
 }
+
+
