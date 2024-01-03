@@ -156,26 +156,14 @@ header nav a {
     background-color: #2484BF;
     display: block;
     width: 100%;
+    he
 }
 
 /*------------- Parte das setas -------------*/
 
-.s-reasons .btn {
-    position: absolute;
-    width: 4rem;
-    height: 4rem;
-    top: 33.2rem;
-    z-index: 10;
-    transition: opacity .3s ease;
-}
-
-.s-reasons .btn-prev {
-    left: 0;
-    transform: rotate(180deg);
-}
-
-.s-reasons .btn-next {
-    right: 0;
+.s-reasons .swiper-button {
+    color: black;
+    top: 350px;
 }
 
 
