@@ -156,7 +156,7 @@ header nav a {
     background-color: #2484BF;
     display: block;
     width: 100%;
-    he
+    max-height: 35rem;
 }
 
 /*------------- Parte das setas -------------*/
@@ -165,7 +165,6 @@ header nav a {
     color: black;
     top: 350px;
 }
-
 
 /*-------------Destinations-Section-------------*/
 
