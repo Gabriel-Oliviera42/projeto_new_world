@@ -1,271 +1,260 @@
 :root {
-    --primary-color: #011C40;
-    --second-color: #023E73;
-    --third-color: #2484BF;
-    --fourth-color: #79C4F2;
-    --fifth-color: #F2D8C2;
+  --primary-color: #011c40;
+  --second-color: #023e73;
+  --third-color: #2484bf;
+  --fourth-color: #79c4f2;
+  --fifth-color: #f2d8c2;
 }
 
 /*--------------- Zerando -------------------*/
 
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Roboto Flex', sans-serif;
-    color: #000;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto Flex", sans-serif;
+  color: #000;
 }
 
 ul {
-    list-style: none;
+  list-style: none;
 }
 
 a {
-    text-decoration: none;
+  text-decoration: none;
 }
 
 img {
-    max-width: 100%;
-    display: block;
+  max-width: 100%;
+  display: block;
 }
 
 button {
-    border: 0;
-    background-color: transparent;
-    cursor: pointer;
+  border: 0;
+  background-color: transparent;
+  cursor: pointer;
 }
 
-h1, h2, h3, h4, h5, h6 {
-    font-family: 'Mohave', sans-serif;  /* Texto temporaria */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Mohave", sans-serif; /* Texto temporaria */
 }
 
 html {
-    font-size: 62.5%;
+  font-size: 62.5%;
 }
 
 .container {
-    width: 100%;
-    max-width: 124.6rem; 
-    margin: 0 auto;
-    padding: 0 15px;
+  width: 100%;
+  max-width: 124.6rem;
+  margin: 0 auto;
+  padding: 0 15px;
 }
 
 /*--------------- header -------------------*/
 
 header {
-    background-color: rgb(255, 34, 0);
-    width: 100%;
-    height: 7.2rem;
-    display: flex;
-    position: sticky;       /* segue o usuário deixando o fundo embaçado */
-    top: 0;
-    z-index: 20;  /* importane caso for usar position: sticky; */
+  background-color: rgb(255, 34, 0);
+  width: 100%;
+  height: 7.2rem;
+  display: flex;
+  position: sticky; /* segue o usuário deixando o fundo embaçado */
+  top: 0;
+  z-index: 20; /* importane caso for usar position: sticky; */
 }
 
 header .container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 header nav {
-    display: flex;
-    gap: 4.7rem;
+  display: flex;
+  gap: 4.7rem;
 }
 
 header nav a {
-    font-size: 1.4rem;
-    font-weight: 500;
-    line-height: 150%;
-    transition: color .3s ease;
+  font-size: 1.4rem;
+  font-weight: 500;
+  line-height: 150%;
+  transition: color 0.3s ease;
 }
 
 /*-------------Hero-Section-------------*/
 
 .s-hero {
-    position: relative;
-    width: 100%;
-    background: url("../imagens/bg-hero1.webp") no-repeat center center;
-    background-size: cover;
-    background-attachment: fixed;
-    height: 80rem;
+  position: relative;
+  width: 100%;
+  background: url("../imagens/bg-hero1.webp") no-repeat center center;
+  background-size: cover;
+  background-attachment: fixed;
+  height: 80rem;
 }
 
 .s-hero:after {
-    content: "";
-    width: 100%;
-    height: 21.6rem;
-    background: linear-gradient(180deg, white 0%, rgba(0, 4, 7, 0.00) 100%);  /* temporaria até decidir as cores do site */
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    z-index: 2;
-    transform: rotate(180deg);
-    pointer-events: none;
+  content: "";
+  width: 100%;
+  height: 21.6rem;
+  background: linear-gradient(
+    180deg,
+    white 0%,
+    rgba(0, 4, 7, 0) 100%
+  ); /* temporaria até decidir as cores do site */
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  z-index: 2;
+  transform: rotate(180deg);
+  pointer-events: none;
 }
 
 .s-hero .container {
-    border-top: 1px solid black;
+  border-top: 1px solid black;
 }
 
 .s-hero h1 {
-    font-size: 6.4rem;
-    font-weight: 600;
-    text-align: center;
-    padding-top: 160px;
+  font-size: 6.4rem;
+  font-weight: 600;
+  text-align: center;
+  padding-top: 160px;
 }
 
 .s-hero p {
-    text-align: center;
-    font-size: 2.4rem;
-    line-height: 150%;
-    margin-bottom: 7.2rem;
+  text-align: center;
+  font-size: 2.4rem;
+  line-height: 150%;
+  margin-bottom: 7.2rem;
 }
 
 /*-------------Reasons-Section-------------*/
 
 .s-reasons {
-    width: 100%;
-    overflow: hidden;
-    position: relative;
+  width: 100%;
+  overflow: hidden;
+  position: relative;
 }
 
-.s-reasons .container { /* temporaria*/
-    position: relative;
+.s-reasons .container {
+  /* temporaria*/
+  position: relative;
 }
 
 .s-reasons h2 {
-    font-size: 4.8rem;
-    font-weight: 600;
-    text-align: center;
-    margin-bottom: 8px;
-    padding-top: 80px;
+  font-size: 4.8rem;
+  font-weight: 600;
+  text-align: center;
+  margin-bottom: 8px;
+  padding-top: 80px;
 }
 
 .s-reasons p {
-    text-align: center;
-    font-size: 1.8rem;
-    line-height: 150%;
-    margin-bottom: 7.2rem;
+  text-align: center;
+  font-size: 1.8rem;
+  line-height: 150%;
+  margin-bottom: 7.2rem;
 }
 
 /*------------- Parte com os slides -------------*/
 
-.swiper {
-    width: 340px;
-    height: 420px;
-  }
+.s-reasons .swiper {
+  width: 340px;
+  height: 420px;
+  padding-bottom: 120px;
+}
 
-  .swiper-slide {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border-radius: 18px;
-    font-size: 22px;
-    font-weight: bold;
-    color: #fff;
-  }
+.s-reasons .swiper-slide {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 18px;
+  font-size: 22px;
+  font-weight: bold;
+  color: #fff;
+}
 
-  .swiper-slide:nth-child(1n) {
-    background-color: rgb(206, 17, 17);
-  }
+.s-reasons .swiper-slide:nth-child(1n) {
+  background-color: rgb(206, 17, 17);
+}
 
-  .swiper-slide:nth-child(2n) {
-    background-color: rgb(0, 140, 255);
-  }
+.s-reasons .swiper-slide:nth-child(2n) {
+  background-color: rgb(0, 140, 255);
+}
 
-  .swiper-slide:nth-child(3n) {
-    background-color: rgb(10, 184, 111);
-  }
+.s-reasons .swiper-slide:nth-child(3n) {
+  background-color: rgb(10, 184, 111);
+}
 
-  .swiper-slide:nth-child(4n) {
-    background-color: rgb(211, 122, 7);
-  }
+.s-reasons .swiper-slide:nth-child(4n) {
+  background-color: rgb(211, 122, 7);
+}
 
-  .swiper-slide:nth-child(5n) {
-    background-color: rgb(118, 163, 12);
-  }
-
-  .swiper-slide:nth-child(6n) {
-    background-color: rgb(180, 10, 47);
-  }
-
-  .swiper-slide:nth-child(7n) {
-    background-color: rgb(35, 99, 19);
-  }
-
-  .swiper-slide:nth-child(8n) {
-    background-color: rgb(0, 68, 255);
-  }
-
-  .swiper-slide:nth-child(9n) {
-    background-color: rgb(218, 12, 218);
-  }
-
-  .swiper-slide:nth-child(10n) {
-    background-color: rgb(54, 94, 77);
-  }
+.s-reasons .swiper-slide:nth-child(5n) {
+  background-color: rgb(118, 163, 12);
+}
 
 /*-------------Destinations-Section-------------*/
 
 .s-destinations {
-    width: 100%;
-    background-color: rgb(221, 255, 0);
-    height: 100rem;
+  width: 100%;
+  background-color: rgb(221, 255, 0);
+  height: 100rem;
 }
 
 .s-destinations .container {
-    border-top: 1px solid black;
+  border-top: 1px solid black;
 }
 
 .s-destinations h2 {
-    font-size: 4.8rem;
-    font-weight: 600;
-    text-align: center;
-    margin-bottom: 8px;
-    padding-top: 80px;
+  font-size: 4.8rem;
+  font-weight: 600;
+  text-align: center;
+  margin-bottom: 8px;
+  padding-top: 80px;
 }
 
 .s-destinations p {
-    text-align: center;
-    font-size: 1.8rem;
-    line-height: 150%;
-    margin-bottom: 7.2rem;
+  text-align: center;
+  font-size: 1.8rem;
+  line-height: 150%;
+  margin-bottom: 7.2rem;
 }
 
 /*-------------Packages-Section-------------*/
 
 .s-packages {
-    width: 100%;
-    background-color: rgb(255, 170, 0);
-    height: 100rem;
+  width: 100%;
+  background-color: rgb(255, 170, 0);
+  height: 100rem;
 }
 
 .s-packages .container {
-    border-top: 1px solid black;
+  border-top: 1px solid black;
 }
 
 .s-packages h2 {
-    font-size: 4.8rem;
-    font-weight: 600;
-    text-align: center;
-    margin-bottom: 8px;
-    padding-top: 80px;
+  font-size: 4.8rem;
+  font-weight: 600;
+  text-align: center;
+  margin-bottom: 8px;
+  padding-top: 80px;
 }
 
 .s-packages p {
-    text-align: center;
-    font-size: 1.8rem;
-    line-height: 150%;
-    margin-bottom: 7.2rem;
+  text-align: center;
+  font-size: 1.8rem;
+  line-height: 150%;
+  margin-bottom: 7.2rem;
 }
 
 /*-------------Testimonials-Section-------------*/
 
 .s-testimonials {
-    width: 100%;
-    background-color: rgb(0, 204, 255);
-    height: 20rem;
+  width: 100%;
+  background-color: rgb(0, 204, 255);
+  height: 20rem;
 }
-
-
